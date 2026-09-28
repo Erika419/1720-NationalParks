@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1720-portal Assignment</title>
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--Open Graph-->
+<meta property="og:title" content="1720-Account" />
+<meta property="og:description" content="Welcome to 1720-Conference Schedule" />
+<meta property="og:image" content="https://erika419.github.io/1720-Account/images/opengraph.jpg" />
+<meta property="og:url" content="https://erika419.github.io/1720-Account/" />
+<meta property="og:logo" content="https://erika419.github.io/1720-Account/images/favicon.svg" />
+<meta property="og:type" content="website" />
+
+<!--favicon-->
+<link rel="icon" type="image/png" href="/1720-account/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/1720-Account/images/favicon.svg" />
+<link rel="icon" type="image/svg+xml" href="/1720-Account/images/logo.svg" />
+<link rel="shortcut icon" href="/1720-Account/images/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/1720-Account/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Accounting" />
+<link rel="manifest" href="/1720-Account/site.webmanifest" />
+
+    <!--SCRIPTS--->
+    <script src="scripts/navigation.js" defer> </script>
+    <script src="scripts/year.js" defer> </script>
+     <script src="scripts/test.js" type="module"> </script>
+     <script src="scripts/account.js" defer> </script>
+     <script src="scripts/dark.js" defer> </script>
+
+
+    
+</head>
+<body>
+    <header>
+        <img src="images/favicon.svg" alt="site logo" width="16" height="16">
+        <span> 1720-Account</span>
+        <button id="dark" class="darkbtn"><img src="images/icon-dark.svg" alt="dark mode image" width="22px" height="22px"></button>
+        <button id="hamburger" class="hamburger" aria-label="nav link button"></button>
+    </header> 
+
+        <nav id="navbar">
+            <ul>
+                <li> <a href="#about"> Profile</a> </li>
+                <li class = "active"> <a href="#mug"> Sign-up</a> </li>
+                <li> <a href="#assign"> Social Media</a> </li>
+            </ul>
+        </nav>
+
+        <main>
+                <h1>Accounts</h1>
+                <section id ="signup" class="signup">
+                <h2 id = "mug">Create a New Profile</h2>
+                <form>
+                    <label>
+                        Full Name: <input type="text" id="name" autocomplete="name" class="input" required>
+                    </label>
+                    <label>
+                        Phone: <input type="tel" id="phone" autocomplete="phone" class="input" required>
+                    </label>
+                    <label>
+                        Email: <input type="email" id="email" autocomplete="email" class="input" required>
+                    </label>
+                <input class="button" type="submit" value="Create New Profile">
+                </form>
+            </section>
+            
+            <section id ="display" class="display">
+                <h2>Your Profile</h2>
+                <div id="about"></div>
+                <button class="button"> Delete my Profile </button>
+            </section>
+
+        </main>
+
+        <footer>
+        <section class="social" id = assign>
+            <a href="https://www.facebook.com/paul.cheney.1422" target="_blank"><img src="images/icons8-facebook.svg" alt="facebook" width="16" height="16"> </a>
+            <a href="https://www.youtube.com/PaulChenney" target="_blank"><img src="images/github-142-svgrepo-com.svg" alt="github" width="16" height="16"> </a>
+            <a href="https://www.linkedin.com/in/pchenney" target="_blank"><img src="images/linkedin-svgrepo-com.svg" alt="linkedin" width="16" height="16"> </a>
+            <a href="https://www.youtube.com/@PaulChenney66" target="_blank"><img src="images/youtube-168-svgrepo-com.svg" alt="youtube" width="16" height="16"> </a>
+        </section>
+
+        
+        <p>&copy; <span id="currentyear"></span> &bull; Erika Costecalde &bull; DWDD1720</p>
+        
+    </footer>
+</body>
+</html>
