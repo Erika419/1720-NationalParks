@@ -3,7 +3,7 @@ const moreBtn = document.querySelector("#moreBtn");
 const details = document.querySelector("#details");
 
 moreBtn.addEventListener("click", () => {
-    switch (holiday.value().toLowerCase().trim()){
+    switch (holiday.value.toLowerCase().trim()){
         case "christmas":
         details.innerHTML = 
         "Christmas (Dec 25.): Celebrates the birth of Jesus Christ. Traditions include gift-giving, decorations, and family time.";
@@ -34,6 +34,6 @@ moreBtn.addEventListener("click", () => {
         break;       
 
         default:
-        details.innerHTML= `Sorry, I don't have any details about <strong>${holiday.value()}</strong>`
+        details.innerHTML= `Sorry, I don't have any details about <strong>${holiday.value}</strong>`
     }
 })
