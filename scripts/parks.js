@@ -6,12 +6,14 @@ parks.forEach((parks)=>{
     const parkcards = document.createElement("div")
 
     //park photo and name
-    const parksection = document.createElementa("section");
+    const parksection = document.createElement("section");
     const parkname = document.createElement("h2");
     const parkphoto = document.createElement("img");
-    parkname.innerText = ("test")
+    parkname.innerText = "test"
+    parkphoto.src=`images/rocky-mountain.webp`
 
-
+    parksection.appendChild(parkphoto);
+    parksection.appendChild(parkname);
 
 
     //build each care
