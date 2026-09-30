@@ -41,4 +41,4 @@
       "description": "Rocky Mountain National Park features alpine lakes, mountain peaks, forests, and wildlife.",
       "image": "images/rocky-mountain.webp"
     }
- ]
+  ]
