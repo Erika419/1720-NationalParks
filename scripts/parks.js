@@ -31,12 +31,45 @@ parks.forEach((parks)=>{
     const parksize = document.createElement("p");
     parksize.innerHTML = `<span>PARK SIZE:</span> ${parks.size_sq_mi} sq miles`;
 
-    //build each care
+    //rating
+    const parkrating = document.createElement("p");
+    parksize.innerHTML = `<span>RATING:</span> ${parks.rating}`;
 
+    switch(parks.rating){
+        case 5:
+            parkrating.innerHTML = "&#9733; &#9733; &#9733; &#9733; &#9733;"
+            break;
+        case 4:
+            parkrating.innerHTML = "&#9733; &#9733; &#9733; &#9733; &#9734;"
+            break;
+        case 3:
+            parkrating.innerHTML = "&#9733; &#9733; &#9733; &#9734; &#9734;"
+            break;
+        case 2:
+            parkrating.innerHTML = "&#9733; &#9733; &#9734; &#9734; &#9734;"
+            break;
+        case 1:
+            parkrating.innerHTML = "&#9733; &#9734; &#9734; &#9734; &#9734;"
+            break;
+
+            default:
+                parkrating.innerHTML = "Could not find a match"
+    };
+
+    //park web link
+    const parkurl = document.createElement("a");
+    parkurl.innerText = "Learn More";
+    parkurl.href= parks.url;
+    parkurl.target= "_blank";
+    
+    
+    //build each card
     parkcards.appendChild(parksection);
     parkcards.appendChild(parkdesc);
     parkcards.appendChild(parkest);
     parkcards.appendChild(parksize);
+    parkcards.appendChild(parkrating);
+    parkcards.appendChild(parkurl);
 
     destination.appendChild(parkcards);
     
