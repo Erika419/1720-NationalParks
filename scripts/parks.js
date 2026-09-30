@@ -34,26 +34,27 @@ parks.forEach((parks)=>{
     //rating
     const parkrating = document.createElement("p");
 
-    switch(parks.rating){
-        case 5:
-            parkrating.innerHTML = "&#9733; &#9733; &#9733; &#9733; &#9733;"
-            break;
-        case 4:
-            parkrating.innerHTML = "&#9733; &#9733; &#9733; &#9733; &#9734;"
-            break;
-        case 3:
-            parkrating.innerHTML = "&#9733; &#9733; &#9733; &#9734; &#9734;"
-            break;
-        case 2:
-            parkrating.innerHTML = "&#9733; &#9733; &#9734; &#9734; &#9734;"
-            break;
-        case 1:
-            parkrating.innerHTML = "&#9733; &#9734; &#9734; &#9734; &#9734;"
-            break;
+switch (parks.rating) {
+    case 5:
+        parkrating.innerHTML = "<span>RATING:</span> &#9733; &#9733; &#9733; &#9733; &#9733;";
+        break;
+    case 4:
+        parkrating.innerHTML = "<span>RATING:</span> &#9733; &#9733; &#9733; &#9733; &#9734;";
+        break;
+    case 3:
+        parkrating.innerHTML = "<span>RATING:</span> &#9733; &#9733; &#9733; &#9734; &#9734;";
+        break;
+    case 2:
+        parkrating.innerHTML = "<span>RATING:</span> &#9733; &#9733; &#9734; &#9734; &#9734;";
+        break;
+    case 1:
+        parkrating.innerHTML = "<span>RATING:</span> &#9733; &#9734; &#9734; &#9734; &#9734;";
+        break;
 
-            default:
-                parkrating.innerHTML = "Could not find a match"
-    };
+    default:
+        parkrating.innerHTML = "<span>RATING:</span> Could not find a match";
+};
+
 
     //park web link
     const parkurl = document.createElement("a");
