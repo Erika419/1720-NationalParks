@@ -49,32 +49,6 @@ header span{
     color: var(--color-secondary);
 }
 
-/**Dark Mode Button tag**/
-.darkbtn{
-    border:none;
-    background: none;
-    width:44px;
-    height:44px;
-    padding-top: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.darkbtn img{
-    width: 30px;
-    height: 30px;
-}
-
-
-/**Dark Mode Styles tag**/
-.dark{
-    background-color: var(--color-mygrey-95);
-}
-
-.dark h1{
-    color: var(--color-mygrey-05);
-}
-
 /**navigation tag**/
 nav{ 
     display: none;
