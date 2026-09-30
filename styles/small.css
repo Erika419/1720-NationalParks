@@ -326,7 +326,7 @@ nav li.active a{
         position: absolute;
         top: 0;
         left:0;
-        background-color: rgb(255,255,255 0.6);
+        background-color: rgba(255,255,255 0.6);
         width: 100%;
         margin: 0;
         padding: 0.5rem 10px;
@@ -336,7 +336,7 @@ nav li.active a{
 
     .allparks p{
         font-weight: 200;
-        color: var(--color-mygrey-10);
+        color: var(--color-mygrey-70);
         margin: 0.5rem 10px;
         span{
             font-size: 0.8rem;

@@ -33,7 +33,6 @@ parks.forEach((parks)=>{
 
     //rating
     const parkrating = document.createElement("p");
-    parksize.innerHTML = `<span>RATING:</span> ${parks.rating}`;
 
     switch(parks.rating){
         case 5:
