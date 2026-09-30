@@ -32,9 +32,11 @@ parks.forEach((parks)=>{
     parksize.innerHTML = `<span>PARK SIZE:</span> ${parks.size_sq_mi} sq miles`;
 
     //build each care
+
     parkcards.appendChild(parksection);
     parkcards.appendChild(parkdesc);
-    destination.appendChild(parkest);
+    parkcards.appendChild(parkest);
+    parkcards.appendChild(parksize);
 
     destination.appendChild(parkcards);
     
