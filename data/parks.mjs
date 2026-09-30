@@ -58,5 +58,25 @@
       "image": "rocky-mountain.webp",
       "size-sq-mi": 415,
       "rating": 2
+    },
+    {
+      "name": "Acadia",
+      "location": "Maine",
+      "established": 1916,
+      "description": "Acadia National Park features rugged mountains, rocky coastline, diverse ecosystems, and rich cultural history.",
+      "url": "https://www.nps.gov/acad/index.htm",
+      "image": "Acadia.webp",
+      "size-sq-mi": 315,
+      "rating": 2
+    },
+    {
+      "name": "Bryce Canyon",
+      "location": "Utah",
+      "established": 1923,
+      "description": "Bryce Canyon National Park features amphitheaters filled with hoodoos, year‑round hiking, scenic drives, stargazing, and winter activities.",
+      "url": "https://www.nps.gov/brca/index.htm",
+      "image": "Acadia.webp",
+      "size-sq-mi": 56,
+      "rating": 4
     }
   ]
