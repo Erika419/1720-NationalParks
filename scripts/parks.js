@@ -1,2 +1,2 @@
-import { parks } from ".../data/parks.mjs";
+import { parks } from "../data/parks.mjs";
 console.log(parks);
